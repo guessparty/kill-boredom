@@ -16,7 +16,7 @@ export const games = [
     category: "Arcade",
     description: "Le classique indémodable.",
     icon: <Zap size={40} color="#fbbf24" />,
-    url: "#"
+    url: "https://html5.gamedistribution.com/e1f81419779746dbb38f289217ef58d4/"
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ export const games = [
     category: "Stratégie",
     description: "Protégez la base !",
     icon: <Ghost size={40} color="#a78bfa" />,
-    url: "#"
+    url: "https://html5.gamedistribution.com/728008a5c29a4dc89c8549bec653fdc5/"
   },
   {
     id: 3,
@@ -32,6 +32,6 @@ export const games = [
     category: "Cartes",
     description: "Détente absolue.",
     icon: <Gamepad2 size={40} color="#34d399" />,
-    url: "#"
+    url: "https://html5.gamedistribution.com/dbc99949db7a4653a6d022f90a44aba6/"
   }
 ];
