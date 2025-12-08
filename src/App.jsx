@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Shuffle, Gamepad, ExternalLink, Zap, X, Loader } from 'lucide-react';
-import { games, externalSites } from './data.jsx'; // Assure-toi que c'est bien .jsx
+import { Shuffle, Gamepad, ExternalLink, Zap, X, Loader, ShoppingBag } from 'lucide-react';
+import { games, externalSites, products } from './data.jsx';
 
 function App() {
   const [activeGame, setActiveGame] = useState(null);
@@ -61,6 +61,94 @@ function App() {
         ))}
 
         
+      </div>
+
+      {/* 2.5 SECTION SHOPPING AMAZON */}
+      <h2 style={{ 
+        textAlign: 'left', 
+        marginBottom: '20px', 
+        marginTop: '60px', 
+        display: 'flex', 
+        alignItems: 'center', 
+        gap: '10px',
+        color: '#f472b6' // Rose sympa
+      }}>
+        <ShoppingBag color="#f472b6" /> Gadgets de Survie au Bureau
+      </h2>
+
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', // Un peu plus petit que les jeux
+        gap: '20px'
+      }}>
+        {products.map((product) => (
+          <a 
+            key={product.id} 
+            href={product.url}
+            target="_blank"
+            rel="noopener noreferrer" // Sécurité pour les liens externes
+            className="card" // On réutilise le style "card" existant
+            style={{ 
+              textDecoration: 'none', 
+              color: 'inherit',
+              display: 'flex',
+              flexDirection: 'column'
+            }}
+          >
+            {/* Image Produit */}
+            <div style={{ 
+              height: '180px', 
+              background: 'white', 
+              padding: '10px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              position: 'relative'
+            }}>
+              {product.badge && (
+                <span style={{
+                  position: 'absolute',
+                  top: '10px',
+                  right: '10px',
+                  background: '#ef4444',
+                  color: 'white',
+                  fontSize: '0.7rem',
+                  fontWeight: 'bold',
+                  padding: '2px 8px',
+                  borderRadius: '10px'
+                }}>
+                  {product.badge}
+                </span>
+              )}
+              {/* On affiche une image si dispo, sinon une icône sac */}
+              {product.image ? (
+                <img src={product.image} alt={product.title} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} />
+              ) : (
+                <ShoppingBag size={40} color="#cbd5e1" />
+              )}
+            </div>
+
+            {/* Info Produit */}
+            <div className="card-content" style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div>
+                <h3 style={{ fontSize: '1rem', marginBottom: '5px' }}>{product.title}</h3>
+                <p style={{ color: '#f59e0b', fontWeight: 'bold', fontSize: '1.1rem' }}>{product.price}</p>
+              </div>
+              <div style={{ 
+                marginTop: '10px', 
+                background: '#f59e0b', 
+                color: 'black', 
+                textAlign: 'center', 
+                padding: '8px', 
+                borderRadius: '6px', 
+                fontSize: '0.85rem',
+                fontWeight: 'bold'
+              }}>
+                Voir sur Amazon
+              </div>
+            </div>
+          </a>
+        ))}
       </div>
 
       {/* 3. MODAL DE JEU (Plein écran) */}

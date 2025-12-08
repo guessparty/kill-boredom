@@ -1,4 +1,4 @@
-import { Gamepad2, Ghost, Zap, Citrus, ArrowBigUpDash, Candy } from 'lucide-react';
+import { Gamepad2, Ghost, Zap, Citrus, ArrowBigUpDash, Candy, ShoppingBag } from 'lucide-react';
 
 // Liste des sites inutiles pour le bouton "Je m'ennuie"
 export const externalSites = [
@@ -71,4 +71,32 @@ export const games = [
     url: "https://html5.gamemonetize.co/b7j6efxqew47djofhkag395vb1ijn3ny/"
   },
   
+];
+
+// Liste des produits Amazon (Gadgets de bureau)
+export const products = [
+  {
+    id: 1,
+    title: "Mini Golf de Toilettes",
+    price: "12,62 €",
+    image: "https://m.media-amazon.com/images/I/81SSFkIIxhL._AC_SL1500_.jpg",
+    url: "https://amzn.to/3XDu9Zl",
+    badge: "Drôle"
+  },
+  {
+    id: 2,
+    title: "Mug 'No Ticket No Support'",
+    price: "16,00 €",
+    image: "https://m.media-amazon.com/images/I/61rQtwJEyiL._AC_SL1500_.jpg",
+    url: "https://amzn.to/4oGIfUU",
+    badge: "Drôle"
+  },
+  {
+    id: 3,
+    title: "Punching Ball de Bureau",
+    price: "35,99 €",
+    image: "https://m.media-amazon.com/images/I/812B5mNNjrL._AC_SL1500_.jpg",
+    url: "https://amzn.to/4oCvwST",
+    badge: "Must-Have"
+  }
 ];
