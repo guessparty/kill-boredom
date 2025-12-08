@@ -2,10 +2,22 @@ import { Gamepad2, Ghost, Zap, Citrus, ArrowBigUpDash, Candy } from 'lucide-reac
 
 // Liste des sites inutiles pour le bouton "Je m'ennuie"
 export const externalSites = [
-  "https://theuselessweb.com/",
-  "https://quickdraw.withgoogle.com/",
-  "https://neal.fun/deep-sea/",
-  "https://pointerpointer.com/"
+  "https://theuselessweb.com/",           // Le classique
+  "https://quickdraw.withgoogle.com/",     // Dessine et l'IA devine (Addictif)
+  "https://neal.fun/deep-sea/",            // Scrolle jusqu'au fond de l'océan
+  "https://pointerpointer.com/",           // Pointe ton curseur, une photo le montre
+  "https://hacker-typer.com/",             // Tape au hasard et ressemble à un hacker
+  "https://findtheinvisiblecow.com/",      // Trouve la vache au son (Mets le son bas !)
+  "https://papertoilet.com/",              // Déroule le papier toilette
+  "https://zoomquilt.org/",                // Zoom infini hypnotisant
+  "https://thisissand.com/",               // Crée du sable coloré
+  "https://jacksonpollock.org/",           // Peins comme Pollock en bougeant la souris
+  "https://smashthewalls.com/",            // Casse des murs en cliquant
+  "https://checkbox.toys/scale/",          // Joue avec des cases à cocher (Satisfaisant)
+  "https://paveldogreat.github.io/WebGL-Fluid-Simulation/", // Simulation de fluide incroyable
+  "https://experiments.withgoogle.com/collection/chrome",   // Expériences Google dingues
+  "https://lines.chromeexperiments.com/",  // Suis des lignes sur la terre
+  "https://littlealchemy2.com/"            // Mélange des éléments pour créer la vie
 ];
 
 // Liste des mini-jeux (Fake pour l'instant)
