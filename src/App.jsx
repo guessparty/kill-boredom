@@ -140,6 +140,31 @@ function App() {
       <footer style={{ marginTop: '60px', color: '#64748b', fontSize: '0.9rem', borderTop: '1px solid #1e293b', paddingTop: '20px' }}>
         <p>© 2025 Anti-Ennui.com - Fait pour ceux qui s'ennuient.</p>
       </footer>
+
+      {/* BOUTON DONATION */}
+<a 
+  href="https://ko-fi.com/antiennui" 
+  target="_blank"
+  style={{
+    position: 'fixed',
+    bottom: '20px',
+    right: '20px',
+    backgroundColor: '#FF5E5B',
+    color: 'white',
+    padding: '10px 20px',
+    borderRadius: '50px',
+    textDecoration: 'none',
+    fontWeight: 'bold',
+    boxShadow: '0 4px 15px rgba(0,0,0,0.3)',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '10px',
+    zIndex: 999
+  }}
+>
+  ☕ M'offrir un café
+</a>
+
     </div>
   );
 }
