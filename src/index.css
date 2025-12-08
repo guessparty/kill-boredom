@@ -87,3 +87,14 @@ h1 {
   margin-top: 20px;
   box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
 }
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spin-animation {
+  animation: spin 1s linear infinite;
+  color: var(--primary);
+}
+
