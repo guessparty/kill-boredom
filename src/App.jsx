@@ -60,16 +60,7 @@ function App() {
           </div>
         ))}
 
-        {/* Placeholder PUB (Optionnel) */}
-        <div className="card" style={{ borderStyle: 'dashed', borderColor: '#475569', background: 'transparent', cursor: 'default' }}>
-          <div className="card-img" style={{ background: 'transparent', color: '#475569' }}>
-            PUB
-          </div>
-          <div className="card-content">
-            <h3>Espace Pub</h3>
-            <p>Bientôt disponible</p>
-          </div>
-        </div>
+        
       </div>
 
       {/* 3. MODAL DE JEU (Plein écran) */}
