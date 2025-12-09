@@ -24,7 +24,7 @@ function App() {
       <header>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', marginBottom: '20px' }}>
           <Gamepad size={40} color="#8b5cf6" />
-          <h1>Anti-Ennui.com</h1>
+          <h1>Anti-Ennui</h1>
         </div>
         <p style={{ color: '#94a3b8' }}>La zone de décompression ultime du web</p>
         
