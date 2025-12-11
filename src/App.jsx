@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Shuffle, Gamepad, ExternalLink, Zap, X, Loader, ShoppingBag } from 'lucide-react';
 import { games, externalSites, products } from './data.jsx';
 
+
 function App() {
   const [activeGame, setActiveGame] = useState(null);
   const [isLoading, setIsLoading] = useState(true);

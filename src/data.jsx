@@ -17,7 +17,9 @@ export const externalSites = [
   "https://paveldogreat.github.io/WebGL-Fluid-Simulation/", // Simulation de fluide incroyable
   "https://experiments.withgoogle.com/collection/chrome",   // Expériences Google dingues
   "https://lines.chromeexperiments.com/",  // Suis des lignes sur la terre
-  "https://littlealchemy2.com/"            // Mélange des éléments pour créer la vie
+  "https://littlealchemy2.com/",            // Mélange des éléments pour créer la vie
+  "https://maze.toys/mazes/mini/daily/",   //Labyrinthe
+  "https://sliding.toys/mystic-square/8-puzzle/daily/", // Puzzle tangram
 ];
 
 // Liste des mini-jeux (Fake pour l'instant)
